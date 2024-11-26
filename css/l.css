@@ -1,0 +1,47 @@
+@charset "uft-8";
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+.menu ul li {
+    float: left;
+    position: relative;
+}
+.menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.menu ul li:hover {
+    background-color: #4CAF50;
+}
+.menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.menu ul li:hover ul {
+    display: block;
+}
+.menu ul li ul li {
+    float: none;
+}
+.menu ul li ul li a {
+    color: black;
+    padding: 12px 14px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+nav ul li ul li a:hover {
+    background-color: #f1f1f1;
+}
